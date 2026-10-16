@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro Básico</title>
+  <!-- PASO 1: Enlazar el archivo CSS -->
+  <link rel="stylesheet" href="css/Base-de-Datos.css">
+</head>
+<body>
+
+  <h1>📋 Registro de Personas</h1>
+
+  <!-- PASO 2: El formulario -->
+  <!-- action="#" = no enviar a ningún servidor por ahora -->
+  <form id="miFormulario">
+
+    <label>Nombre:</label>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+    <label>Apellido:</label>
+    <input type="text" id="apellido" placeholder="Escribe tu apellido">
+
+    <label>Correo:</label>
+    <input type="email" id="correo" placeholder="ejemplo@correo.com">
+
+    <label>Región:</label>
+    <input type="text" id="region" placeholder="Ej. Ciudad de Guatemala">
+
+    <label>Fecha de nacimiento:</label>
+    <input type="date" id="fecha">
+
+    <!-- Botón para guardar -->
+    <button type="button" onclick="guardar()">Guardar</button>
+    <button type="button" onclick="limpiar()">Limpiar</button>
+
+  </form>
+
+  <hr>
+
+  <h2>📂 Datos guardados:</h2>
+
+  <!-- PASO 3: La tabla donde se muestran los datos -->
+  <table id="miTabla">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo</th>
+        <th>Región</th>
+        <th>Fecha Nac.</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody id="cuerpoTabla">
+      <!-- Aquí JavaScript agrega las filas -->
+    </tbody>
+  </table>
+
+  <!-- PASO 4: Enlazar el archivo JavaScript AL FINAL del body -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
